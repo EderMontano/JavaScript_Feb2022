@@ -1,6 +1,6 @@
 
-const impresion = requiere('./impresion');
+const impresion = require('./impresion');
 
-TestWatcher('Validar que se imprima una cadena de texto', ()=>{
+test('Validar que se imprima una cadena de texto', ()=>{
     expect(impresion.holaMundo()).toBe('¡Hola Mundo!');
 });

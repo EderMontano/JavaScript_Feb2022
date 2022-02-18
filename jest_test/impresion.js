@@ -1,8 +1,4 @@
-function impresion(){
-    holaMundo();
+const impresion = {
+    holaMundo : () => '¡Hola Mundo!'
 }
-
-function holaMundo(){
-    console.log('¡Hola Mundo!')
-}
-module.exports = impresion, holaMundo
+module.exports = impresion

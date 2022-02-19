@@ -21,3 +21,6 @@ const operaciones = {
 }
 
 module.exports = operaciones
+
+
+

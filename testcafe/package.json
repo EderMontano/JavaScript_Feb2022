@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "testcafe": "^1.18.3"
+  },
+  "name": "testcafe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "description": ""
+}

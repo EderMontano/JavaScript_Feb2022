@@ -22,6 +22,17 @@ class Page{
             new Feature('Easy embedding into a Continuous integration system'),
             new Feature('Advanced traffic and markup analysis')
         ]
+
+        this.menu = Selector('#preferred-interface');
+        this.javascript = Selector('#preferred-interface > option:nth-child(2)')
+        this.triedCheckbox = Selector('#tried-test-cafe')
+        this.textArea = Selector('#comments')
+        //Slide bar
+        this.slideBar = Selector('#slider')
+        this.slider = {
+            handler: Selector('.ui-slider-handle'),
+            tick: Selector('.slider-value')
+        }
     }
 }
 

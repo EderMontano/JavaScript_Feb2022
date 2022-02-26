@@ -99,3 +99,25 @@ fixture('Pruebas de UI usando testcafe para practicas de Node.js')
             .click(pagina.radio_windows)
             .expect(pagina.radio_windows.checked).ok()
     });
+
+    test('Prueba 13: Probar seleccionar un elemento de un menu', async t => {
+        await t
+            .click(pagina.menu)
+            .click(pagina.javascript)
+
+            .expect(pagina.javascript.exists).ok();
+    });
+
+    test('Prueba 14: Dar click en un checkbox para activar un area de texto', async t => {
+        await t
+            .click(pagina.triedCheckbox)
+            .typeText(pagina.textArea, 'Primera linea')
+            .typeText(pagina.textArea, '\nSegunda linea')
+            .typeText(pagina.textArea, '\nTercera linea')
+            .selectTextAreaContent(pagina.textArea,1,5)
+            .pressKey('delete')
+            
+            .typeText(pagina.textArea, 'Reemplaza todo por esto', {replace:true})
+            .expect(pagina.textArea.value).eql('Reemplaza todo por esto')
+            .expect(pagina.textArea.value).notContains('linea')
+    });

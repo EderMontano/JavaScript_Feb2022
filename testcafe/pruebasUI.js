@@ -121,3 +121,9 @@ fixture('Pruebas de UI usando testcafe para practicas de Node.js')
             .expect(pagina.textArea.value).eql('Reemplaza todo por esto')
             .expect(pagina.textArea.value).notContains('linea')
     });
+
+    test('Prueba 15: manejar un slider bar', async t =>{
+        await t 
+            .click(pagina.triedCheckbox)
+            .dragToElement(pagina.slider.handler.pagina.slider)
+    });
